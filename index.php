@@ -61,7 +61,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             <div class="top_area">
               <div class="thumb hvr_anim">
                 <a href="<?php $this->permalink() ?>">
-                  <img src="<?php echo showThumb($this,true); ?>" alt="island" width="260" height="146"></a>
+                  <img src="<?php echo showThumb($this,true); ?>" alt="island" width="100%" height="100%"></a>
               </div>
               <div class="noto_n category cat_event">
                 <a href="<?php $this->permalink() ?>"><?php $this->category(',', false); ?></a></div>

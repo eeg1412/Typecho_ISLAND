@@ -5,7 +5,7 @@
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -76,7 +76,11 @@
     </ul>
   </div>
 </header>
-<div id="menu_btn" class="sp"><a href="#"><span></span><span></span><span></span></a></div>
+<div id="menu_btn" class="sp">
+  <a href="#">
+    <span></span><span></span><span></span>
+  </a>
+</div>
 <div id="bg_can"></div>
 <div id="body">
     <div class="container">

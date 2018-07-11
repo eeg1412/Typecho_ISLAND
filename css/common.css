@@ -110,6 +110,15 @@ a,button,input,textarea{
     border-bottom: 3px solid #23aaff;
 }
 /* 首页 */
+#content .wrap .content-area .site-main .news_cell .top_area .thumb a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+#content .wrap .content-area .site-main .news_cell .top_area .thumb a img{
+  object-fit: cover;
+}
 .site-main{
   position: relative;
 }
@@ -293,6 +302,116 @@ a,button,input,textarea{
   color: #fff;
   padding:12px 22px;
 }
+/* 友联 */
+.post_item p.link_url_box{
+  padding: 0 10px;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 3px;
+  box-sizing: border-box;
+  width: 100%;
+  white-space:nowrap; 
+	overflow:hidden; 
+  text-overflow:ellipsis;
+  line-height: 42px;
+}
+.post_item p.link_url_box_c{
+  padding: 0 10px;
+  font-size: 14px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  white-space:nowrap; 
+	overflow:hidden; 
+  text-overflow:ellipsis;
+  line-height: 24px;
+}
+.post_item.type_link,.post_item.type_link *{
+    -web-kit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+.post_item.type_link{
+  width: 31.333333%;
+  height: 80px;
+  padding-left: 80px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  float: left;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-right: 2%;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+  background-color:rgba(255,255,255,0.6); 
+  margin-bottom: 20px;
+}
+.post_item.type_link:hover{
+  background-color:#23aaff;
+}
+.post_item.type_link:hover p{
+  color: #fff;
+}
+.post_bg_body{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.link_item_img{
+  width: 80px;
+  height: 80px;
+}
+/* 分类 */
+a.tag_item {
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  background-color: #000;
+  padding: 10px 14px;
+  margin-right: 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+a.tag_item:hover {
+  background-color: #23aaff;
+}
+.tag_list_body{
+  margin-bottom: 28px;
+}
+.categories_list_body .archive-title{
+  border-bottom: 1px solid #23aaff;
+}
+.categories_list_body .archive-title a{
+  color: #23aaff;
+}
+/* 归档 */
+.archive .archive_posts li{
+  list-style: none;
+}
+.archive.archive_year h3{
+  display: inline-block;
+  color: #23aaff;
+  font-size: 16px;
+  line-height: 1em;
+  border-bottom: 1px solid #23aaff;
+  padding: 12px 15px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+ul.archive_posts.archive_month {
+  padding: 0 18px;
+}
+li.li_guidang.archive_post.archive_day {
+  line-height: 26px;
+  padding: 18px 0 0 0;
+}
+.archive_posts.archive_month h4{
+  font-weight:bold;
+}
 /* 文章 */
 pre {
   padding: 8px;
@@ -369,14 +488,11 @@ pre, code {
 }
 .post_body{
   margin: 20px auto 70px;
-  width: 850px;
-  /* background: #fff; */
+  width: 820px;
   border-radius: 20px;
   padding: 40px;
-  /* border: 2px solid #23aaff; */
-  /* opacity: 0.8; */
   box-shadow: 0 0 0 1px hsla(240,0%,100%,.3) inset, 0 2px 1px rgba(0, 0, 0, 0.1);
-  background: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.6);
   filter: blur(10px);
   opacity: 0;
   -webkit-transition: all 0.33s ease-out;
@@ -474,7 +590,7 @@ pre, code {
 }
 #comment-form label {
 	display: block;
-	margin-bottom: .5em;
+	margin: .5em 0;
 	font-weight: bold;
 }
 #comment-form .required:after {
@@ -489,6 +605,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: rgba(255,255,255,0.6);
 }
 #response{
   font-size: 18px;
@@ -518,8 +635,20 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .copyright p {
   line-height: 24px;
 }
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 901px) {
   /* 文章 */
+.post_body.type_girl{
+  background-image: url(../img/girlbg.png);
+  background-repeat: no-repeat;
+  background-size: 338px 1089px;
+  background-position-x: right;
+  background-position-y: top;
+  -webkit-transition: initial;
+  -moz-transition: initial;
+  -o-transition: initial;
+  -ms-transition: initial;
+  transition:initial;
+}
 .wrap .page-header {
     text-align: center;
     margin: 130px 0 50px 0;
@@ -548,7 +677,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 /* 整体 */
 .container{
-  min-width: 1200px;
+  min-width: 900px;
   width: 100%;
 }
 /* 首页博文 */
@@ -563,10 +692,14 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   overflow: hidden;
   padding: 0 110px 0 110px;
 }
+#content .wrap .content-area .site-main .news_cell .top_area .thumb {
+  width: 260px;
+  height: 146px;
+}
 /* 顶部导航 */
 .island_top_banner{
   background-image: url('../img/banner.jpg');
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -888,7 +1021,8 @@ header#header_sub #menu_banner ul.bnr_list li .arrow {
 /************************* footer ***************************/
 
 footer#colophon {
-	clear: both;
+  clear: both;
+  min-width: 900px;
 }
 footer#colophon hr {
 	border: none;
@@ -898,7 +1032,7 @@ footer#colophon hr {
 }
 footer#colophon .wrpr {
 	padding: 45px 0 50px 0;
-	width:1200px;
+	width:900px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -987,7 +1121,11 @@ footer#colophon .wrpr .copyright .wrpr {
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
+/* 友联 */
+.post_item.type_link{
+  width: 100%;
+}
 /* 文章列表 */
 .archive-title-body{
   padding-top: 90px;
@@ -1035,6 +1173,20 @@ footer#colophon .wrpr .copyright .wrpr {
   margin-top: 90px;
 }
 /* 首页 */
+#menu_btn_logo{
+  float: left;
+    padding: 0 20px;
+}
+#menu_btn_logo img{
+  height: 26px;
+}
+#content .wrap .content-area .site-main .news_cell .top_area .thumb {
+  width: 100%;
+  max-height: 300px;
+}
+.content-area .site-main .news_cell .top_area .thumb a,.content-area .site-main .news_cell .top_area .thumb img{
+  max-height: 300px;
+}
 #content .wrap .page-header {
   margin: 40px 0 30px 0;
 }
@@ -1090,7 +1242,6 @@ footer#colophon .wrpr .copyright .wrpr {
 }
 .island_top_banner_sp{
   display: block;
-  padding-top: 56px;
   background: #fff;
 }
 .island_top_banner_sp img{
@@ -1239,15 +1390,12 @@ header#masthead .sns .wrpr ul li {
   right: 0;
   z-index: 10;
   padding: 15px 6.666% 0 0;
-  width: 100%;
   box-sizing: border-box;
   text-align: right;
-  box-shadow: 0 0 0 1px hsla(240,0%,100%,.3) inset, 0 2px 1px rgba(0, 0, 0, 0.1);
-  background: rgba(255,255,255,0.6);
+
 }
 #menu_btn.sp.close{
   box-shadow:none;
-  background:none;
 }
 #menu_btn a {
   display: inline-block;
@@ -1259,7 +1407,7 @@ header#masthead .sns .wrpr ul li {
   width:100%;
   height: 2px;
   margin: 0 0 32.857% 0;
-  background-color:#000;
+  background-color:#5a5a5a;
   -webkit-transition:all 0.25s ease-out;
   -moz-transition:all 0.25s ease-out;
   -ms-transition:all 0.25s ease-out;

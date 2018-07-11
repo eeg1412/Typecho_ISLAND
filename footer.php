@@ -9,7 +9,7 @@
   <hr class="pc">
   <hr class="pc">
   <div class="wrpr">
-    <div id="to_top" class="pc show">
+    <div id="to_top" class="pc">
       <a href="#top">
         <div class="icon">
           <img class="def" src="<?php $this->options->themeUrl('img/to_top.png'); ?>" alt="page top" width="73" height="70">
