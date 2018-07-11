@@ -97,7 +97,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				success: function(res) {
           $('#newsList').empty().append(res);
           $('#blogLoader').fadeOut(200);
-					$('html, body').animate({scrollTop: ($('#newsList').offset().top)-80}, 300);
+					$('html, body').animate({scrollTop: ($('#content').offset().top)-91}, 300);
 				},
 				error:function(){
           alert('获取信息失败');
