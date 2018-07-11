@@ -354,6 +354,9 @@ a,button,input,textarea{
 .post_item.type_link:hover p{
   color: #fff;
 }
+.post_item.type_link:hover .post_bg_body{
+  opacity: 0.6;
+}
 .post_bg_body{
   position: absolute;
   left: 0;
