@@ -376,6 +376,7 @@ a.tag_item {
   background-color: #000;
   padding: 10px 14px;
   margin-right: 5px;
+  margin-bottom: 10px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
@@ -390,6 +391,9 @@ a.tag_item:hover {
 }
 .categories_list_body .archive-title a{
   color: #23aaff;
+}
+.content_cate_box{
+  margin-bottom: 40px;
 }
 /* 归档 */
 .archive .archive_posts li{

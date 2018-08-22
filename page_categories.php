@@ -46,7 +46,7 @@ $this->need('header.php'); ?>
           <?php while ($categories->next()): ?>
           <?php if(count($categories->children) === 0): ?>
           <?php $this->widget('Widget_Archive@category-' . $categories->mid, 'pageSize=10000&type=category', 'mid=' . $categories->mid)->to($posts); ?>
-          <div id="posts-list-<?php $categories->name(); ?>" class="archive box" data-category="<?php $categories->name(); ?>">
+          <div id="posts-list-<?php $categories->name(); ?>" class="archive box content_cate_box" data-category="<?php $categories->name(); ?>">
             <h4 class="archive-title"> <a href="<?php $categories->permalink(); ?>" class="guidang" id="posts-list-<?php $categories->slug(); ?>">
               <?php $categories->name(); ?>
               </a> </h4>
