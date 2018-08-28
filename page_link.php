@@ -38,7 +38,7 @@ $(document).ready(function() {
                     link_name[1] = '暂无描述';
                 }
 				var link_alt = li_i.find('img').attr('alt');
-				var link_html = '<a href="'+link_url+'" class="post_item type_link"><div class="post_bg_body"><img alt="'+link_alt+'" src="'+icon_url+'" class="link_item_img"></div><p class="link_url_box">'+link_name[0]+'</p><p class="link_url_box_c">'+link_name[1]+'</p></a>';
+				var link_html = '<a href="'+link_url+'" class="post_item type_link" target="_blank"><div class="post_bg_body"><img alt="'+link_alt+'" src="'+icon_url+'" class="link_item_img"></div><p class="link_url_box">'+link_name[0]+'</p><p class="link_url_box_c">'+link_name[1]+'</p></a>';
 				$('#page_link_box').append(link_html);
 				li_i.remove();
 			}
@@ -50,7 +50,7 @@ $(document).ready(function() {
                 if(!link_name[1]){
                     link_name[1] = '暂无描述';
                 }
-				var link_html = '<a href="'+link_url+'" class="post_item type_link"><div class="post_bg_body"><img alt="'+link_name+'" src="'+'<?php $this->options->themeUrl('img/icon_1.jpg');?>'+'" class="link_item_img"></div><p class="link_url_box">'+link_name[0]+'</p><p class="link_url_box_c">'+link_name[1]+'</p></a>';
+				var link_html = '<a href="'+link_url+'" class="post_item type_link" target="_blank"><div class="post_bg_body"><img alt="'+link_name+'" src="'+'<?php $this->options->themeUrl('img/icon_1.jpg');?>'+'" class="link_item_img"></div><p class="link_url_box">'+link_name[0]+'</p><p class="link_url_box_c">'+link_name[1]+'</p></a>';
 				$('#page_link_box').append(link_html);
 				li_i.remove();
 			}
