@@ -32,7 +32,7 @@
  * 
  * @package ISLAND
  * @author 广树
- * @version 0.1.2
+ * @version 0.1.3
  * @link http://wikimoe.com
  */
 
